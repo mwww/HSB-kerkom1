@@ -1,0 +1,81 @@
+/*
+    Agar nama Class dan file tidak bertabrakan,
+    Penamaan file dan class harus sesuai dengan nama penulis.
+
+    Ida Nyoman Tegeh Adnyana (IT)
+*/
+
+/*
+    ClassList With hierarchy:
+    - it-ft-wrap
+        - it-ft-logo
+        - it-ft-sitenav
+        - it-ft-custcare
+        - it-ft-findus
+*/
+
+footer {
+	background-color: #14141e;
+	/* margin-top: 250px; */
+}
+
+.it-ft-wrap {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 100px 50px;
+	margin: 0 auto;
+	max-width: 1500px;
+
+	/* line-height: 1.25rem; */
+}
+
+.it-ft-wrap p {
+	line-height: 1.25rem;
+}
+
+.it-ft-logo > img {
+	width: 50px;
+	height: 50px;
+}
+
+.it-ft-sitenav > h1 {
+	font-family: raleway-bold;
+	font-size: 2rem;
+}
+
+.it-ft-sitenav > ul > li {
+	margin-top: 5px;
+}
+
+.it-ft-custcare h3 {
+	font-family: raleway-bold;
+	font-size: 1.5rem;
+}
+
+.it-ft-custcare > div:nth-child(1) > p:nth-child(2) {
+	font-size: 1.5rem;
+}
+
+.it-ft-custcare > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) span {
+	margin-right: 0.75ch;
+}
+
+.it-ft-custcare > div:nth-child(2) {
+	margin-top: 20px;
+}
+
+.it-ft-findus > h3:nth-child(1) {
+	font-family: raleway-bold;
+	font-size: 1.5rem;
+}
+
+.it-ft-findus > ul:nth-child(2),
+.it-ft-findus > ul:nth-child(3) {
+	display: flex;
+	gap: 1rem;
+}
+
+.it-ft-findus > ul:nth-child(3) {
+	margin-top: 20px;
+}

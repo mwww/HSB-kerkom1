@@ -1,0 +1,83 @@
+nav {
+	position: fixed;
+	width: 100%;
+	height: calc(39px + 20px + 20px);
+	inset: 0;
+
+	z-index: 6969;
+}
+
+nav {
+	background-color: rgb(17 17 17 / 0);
+	transition: background-color 0.25s ease-out;
+}
+
+nav.mi-navBG {
+	background-color: rgb(17, 17, 17);
+}
+
+/*
+	@ query di bawah ini akan memeriksa apakah browser support `backdrop-filter` atau tidak.
+	jika iya, element `nav` akan memiliki effect blur ketika memiliki CLASS mi-navBG.
+ */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+	nav {
+		background-color: rgb(17 17 17/0);
+		transition: background-color 0.25s ease-out,
+			backdrop-filter 0.25s ease-out;
+		-webkit-backdrop-filter: blur(0) brightness(1);
+		backdrop-filter: blur(0) brightness(1);
+	}
+	nav.mi-navBG {
+		background-color: rgb(17 17 17/0.75);
+		-webkit-backdrop-filter: blur(12px) brightness(0.75);
+		backdrop-filter: blur(12px) brightness(0.75);
+	}
+}
+
+.mi-nav-content {
+	padding: 0 50px;
+	margin: 20px auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1500px;
+
+	/* font-weight: bolder; */
+	/* font-family: raleway-bold; */
+}
+
+.mi-nav-content > img {
+	max-height: 2rem;
+}
+
+.mi-nav-content > ul {
+	display: flex;
+	gap: 50px;
+}
+
+.mi-nav-content > ul > li > a {
+	text-decoration: none;
+	font-family: raleway-bold;
+	font-size: 0.85rem;
+}
+
+.mi-nav-content > a > button {
+	cursor: pointer;
+}
+/* .mi-nav-content > a > button {
+	/* height: 45px; * /
+	/* border-radius: calc(45px / 2); * /
+	padding: 10px 20px;
+	border-radius: calc(1rem + 5px);
+	/* background-color: #030303; * /
+	background: linear-gradient(297.03deg, #4588c4 14.23%, #23588c 81.67%);
+} */
+
+.mi-nav-content > a > button {
+	text-decoration: none;
+	font-family: raleway-bold;
+	/* font-weight: 700; */
+	/* font-size: 0.7rem; */
+}

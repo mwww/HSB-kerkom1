@@ -1,0 +1,57 @@
+main {
+	padding: 0 50px;
+	margin: 0 auto;
+	max-width: 1500px;
+
+	/* height: 2000px; */
+	/* height: 100%; */
+
+	/* position: relative; */
+	/* margin-top: -100px; */
+	position: relative;
+}
+
+main::before {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	inset: 0;
+	left: calc(calc(100vw - 100%) / -2);
+	margin-top: -100px;
+	/* top: 100vh; */
+	height: inherit;
+	/* width: inherit; */
+	/* width: auto; */
+	width: 100vw;
+	background: url(/assets/main-bg.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* height: 2000px; */
+	height: 100%;
+}
+
+main > section {
+	margin: 100px auto;
+}
+main > section:nth-child(1) {
+	margin: 0 auto;
+}
+main > section > div:nth-child(1) {
+	/* width: calc(1500px - 100px); */
+	width: 100%;
+}
+
+main > section > div:nth-child(1) > :where(h2, p) {
+	/* main > section > div:nth-child(1) > h2,
+main > section > div:nth-child(1) > p { */
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 0 auto;
+
+	font-family: raleway-bold;
+}
+
+main > section > div:nth-child(1) > h2 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+}

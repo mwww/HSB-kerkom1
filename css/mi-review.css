@@ -1,0 +1,63 @@
+.mi-rv-cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 25px;
+	margin-top: 50px;
+}
+.mi-rv-card {
+	padding: 30px;
+	background-color: #14141e;
+	border-radius: 20px;
+	border-color: #212337;
+	border-width: 1px;
+	border-style: solid;
+
+	width: 450px;
+}
+.mi-rv-profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.mi-rv-card:nth-child(1) > .mi-rv-profile > .mi-rv-pfp {
+	background-image: url(/assets/review_profile_pictures/3.jpg);
+}
+.mi-rv-card:nth-child(2) > .mi-rv-profile > .mi-rv-pfp {
+	background-image: url(/assets/review_profile_pictures/1.jpg);
+}
+.mi-rv-card:nth-child(3) > .mi-rv-profile > .mi-rv-pfp {
+	background-image: url(/assets/review_profile_pictures/2.jpg);
+}
+
+.mi-rv-pfp {
+	width: 75px;
+	height: 75px;
+	/* background-image: url(/assets/review_profile_pictures/1.jpg); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: calc(75px / 2);
+
+	border-color: #212337;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.mi-rv-content {
+	margin-top: 20px;
+}
+
+.mi-rv-name {
+	font-family: raleway-bold;
+	font-size: 1.75rem;
+}
+
+.mi-rv-content > h3 {
+	font-family: raleway-bold;
+	font-size: 1.25rem;
+}
+
+.mi-rv-stars > img {
+	height: 1.25rem;
+	margin: 5px 0;
+}

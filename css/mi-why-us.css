@@ -1,0 +1,58 @@
+.mi-wu-cards {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+
+	/* gap: 50px; */
+	gap: 25px;
+}
+
+.mi-wu-card {
+	width: 380px;
+	height: 380px;
+	padding: 30px;
+	background-color: #14141e;
+	border-radius: 20px;
+	border-color: #212337;
+	border-width: 1px;
+	border-style: solid;
+
+	position: relative;
+}
+
+div.mi-wu-card:nth-child(1) > div {
+	background-image: url(/assets/easy.svg);
+}
+div.mi-wu-card:nth-child(2) > div {
+	background-image: url(/assets/variative.svg);
+}
+div.mi-wu-card:nth-child(3) > div {
+	background-image: url(/assets/credible.svg);
+}
+
+.mi-wu-card-img {
+	/* width: 320px;
+	height: 320px; */
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.mi-wu-card-img::after {
+	position: absolute;
+	content: "";
+	width: calc(100% - 60px);
+	height: calc(100% - 60px);
+	/* background-color: red; */
+	background: linear-gradient(0deg, #14141e 0%, rgba(33, 35, 55, 0) 50%);
+}
+
+.mi-wu-card > h3 {
+	font-size: 1.75rem;
+	font-family: raleway-bold;
+	position: absolute;
+	/* inset: 0 50px 100px 200px; */
+	bottom: 30px;
+	left: 30px;
+}

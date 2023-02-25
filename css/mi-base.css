@@ -1,0 +1,75 @@
+@font-face {
+	font-family: caveat;
+	src: url(/fonts/caveat/Caveat-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: raleway-black;
+	src: url(/fonts/raleway/Raleway-Black.ttf);
+	/* font-weight: 900; */
+}
+@font-face {
+	font-family: raleway-bold;
+	src: url(/fonts/raleway/Raleway-SemiBold.ttf);
+	/* font-size: 0.85em; */
+	/* font-weight: bolder; */
+}
+@font-face {
+	font-family: raleway-med;
+	src: url(/fonts/raleway/Raleway-Medium.ttf);
+	/* font-weight: bold; */
+}
+@font-face {
+	font-family: raleway-reg;
+	src: url(/fonts/raleway/Raleway-Regular.ttf);
+	/* font-weight: normal; */
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	color: #fff;
+
+	/* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+	font-family: raleway-reg;
+	/* font-size: 1rem; */
+	/* font-weight: ; */
+}
+
+body {
+	background-color: #000;
+	/* font-size: 0.85em; */
+	/* max-width: 100%; */
+	overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+	/* font-size: 1rem; */
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+button {
+	cursor: pointer;
+}
+button {
+	/* height: 45px; */
+	/* border-radius: calc(45px / 2); */
+	padding: 10px 20px;
+	border-radius: calc(1rem + 5px);
+	/* background-color: #030303; */
+	background: linear-gradient(297.03deg, #4588c4 14.23%, #23588c 81.67%);
+}
