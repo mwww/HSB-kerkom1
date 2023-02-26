@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="/css/ag-featured.css" />
 		<link rel="stylesheet" href="/css/IT-footer.css" />
 
+		<link rel="stylesheet" href="/css/mi-hover.css" />
 		<script src="/js/mi-nav.js" defer></script>
 	</head>
 	<body>
@@ -25,10 +26,10 @@
 			<div class="mi-nav-content">
 				<img src="/assets/logo.svg" alt="EasyRent Logo" />
 				<ul>
-					<li><a href="">HOME</a></li>
-					<li><a href="">CATALOGUE</a></li>
-					<li><a href="">ABOUT US</a></li>
-					<li><a href="">CONTACT</a></li>
+					<li><a href="" class="mi-hover">HOME</a></li>
+					<li><a href="" class="mi-hover">CATALOGUE</a></li>
+					<li><a href="" class="mi-hover">ABOUT US</a></li>
+					<li><a href="" class="mi-hover">CONTACT</a></li>
 				</ul>
 				<a href="">
 					<button>
@@ -75,6 +76,8 @@
 				</div>
 			</section>
 			<section>
+				<!-- Review -->
+				<!-- Muhammad Iqbal -->
 				<div class="">
 					<h2>What Our Customer Says</h2>
 					<p>More Than 1000 Satisfied Customer</p>
@@ -148,7 +151,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- Review: ? -->
 			</section>
 			<section class="ag-ft">
 				<!-- Featured -->
@@ -181,7 +183,11 @@
 						</div>
 					</div>
 					<!-- bellow is extras, only shown when button pressed. -->
-					<!-- <div class="ag-ft-cards">
+					<div
+						id="mi-extras"
+						style="display: none"
+						class="ag-ft-cards"
+					>
 						<div class="ag-ft-card">
 							<div>
 								<p>Tecnica Green 2023 AT/T & M/T</p>
@@ -203,9 +209,51 @@
 								<p>Rp. 3.333.000 / day</p>
 							</div>
 						</div>
-					</div> -->
+					</div>
 					<div class="mi-extras-btn">
-						<button>Load More</button>
+						<button
+							id="mi-extras-show-btn"
+							onclick="miExtasLMore()"
+						>
+							Load More
+						</button>
+						<button
+							style="display: none"
+							id="mi-extras-hide-btn"
+							onclick="miExtasLLess()"
+						>
+							Load Less
+						</button>
+
+						<!-- to show and hide extra cars -->
+						<script>
+							function miExtasLMore() {
+								document.getElementById(
+									"mi-extras"
+								).style.display = "flex";
+
+								document.getElementById(
+									"mi-extras-show-btn"
+								).style.display = "none";
+
+								document.getElementById(
+									"mi-extras-hide-btn"
+								).style.display = "flex";
+							}
+							function miExtasLLess() {
+								document.getElementById(
+									"mi-extras"
+								).style.display = "none";
+
+								document.getElementById(
+									"mi-extras-show-btn"
+								).style.display = "flex";
+
+								document.getElementById(
+									"mi-extras-hide-btn"
+								).style.display = "none";
+							}
+						</script>
 					</div>
 				</div>
 			</section>
